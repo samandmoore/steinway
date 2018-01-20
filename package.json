@@ -1,0 +1,16 @@
+{
+  "name": "steinway",
+  "version": "1.0.0",
+  "description": "list the train times at my favorite stop",
+  "main": "index.js",
+  "repository": "github.com/samandmoore/steinway",
+  "author": "samandmoore",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14",
+    "mta-gtfs": "^1.1.0"
+  },
+  "devDependencies": {}
+}
