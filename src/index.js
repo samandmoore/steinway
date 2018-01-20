@@ -12,13 +12,17 @@ let mta = new Mta({
   feed_id: nqrw_feed_id
 })
 
+function toTime(value) {
+  return moment.tz(value*1000, "America/New_York")
+}
+
 function printTrain(train) {
-  arrivalTime = moment.tz(train.arrivalTime*1000, "America/New_York")
+  arrivalTime = toTime(train.arrivalTime)
   console.log(`${train.routeId} arriving ${arrivalTime.fromNow()}`)
 }
 
 function printTrains(trains) {
-  trains.slice(0, 3).forEach(function (train) {
+  trains.slice(0, 3).forEach((train) => {
     printTrain(train)
   })
 }
