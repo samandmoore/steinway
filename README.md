@@ -5,17 +5,19 @@ Street.
 
 run it:
 ```
-  $ MTA_TOKEN='YOUR MTA TOKEN' bin/times
+  $ MTA_TOKEN='YOUR MTA TOKEN' bundle exec ruby times.rb
 ```
 
 output:
 ```
-E arriving in 6 minutes
-E arriving in 9 minutes
-E arriving in 16 minutes
-F arriving in 21 minutes
-F arriving in 32 minutes
-F arriving in an hour
-R arriving in 7 minutes
-R arriving in 28 minutes
+N
+        F arriving at 23:37 going N
+        E arriving at 23:41 going N
+        F arriving at 23:50 going N
+        E arriving at 23:51 going N
+S
+        E arriving at 23:40 going S
+        F arriving at 23:40 going S
+        F arriving at 23:46 going S
+        E arriving at 23:48 going S
 ```
