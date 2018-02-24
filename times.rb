@@ -3,6 +3,8 @@ require 'google/transit/gtfs-realtime.pb'
 require 'net/http'
 require 'uri'
 require 'pry'
+require 'dotenv'
+Dotenv.load('.env', '.env.local')
 
 class FeedUrls
   def nqrw
